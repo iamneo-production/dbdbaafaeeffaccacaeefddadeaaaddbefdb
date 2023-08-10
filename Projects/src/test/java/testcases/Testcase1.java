@@ -39,7 +39,7 @@ public class Testcase1 extends Base {
             ExtentTest test = reporter.createTest("Registeration Page", "Execution for registeration");
             e = new EventHandler();
             driver.get(prop.getProperty("url") + "/Register");
-            //e.logger("Browser Navigated to the Register Page");
+            e.logger("Browser Navigated to the Register Page");
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT_TIME));
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(PAGE_LOAD_TIME));
             Tricetis_Register register = PageFactory.initElements(driver, Tricetis_Register.class);
